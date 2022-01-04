@@ -1,0 +1,41 @@
+function telephoneCheck(str) {
+  let strew = str.replace(/-| /g,"");
+  strew = strew.replace(/s/g,"");
+
+  var ctr = 0;
+  for(let j = 0; j< str.length; j++){
+    if(str[j]=== '-')
+    ctr = ctr+1;
+  }
+  if(ctr > 2)
+  return false;
+  
+  if(str.indexOf("(") === -1 && str.indexOf(")") > -1)
+  return false;
+
+  if(str[0]==='-')
+  return false;
+
+  if(str.indexOf(")") - str.indexOf("(") >= 5){
+    return false;
+  }
+
+  if(strew.indexOf("(") < strew.indexOf(")")){
+    strew = strew.replace(/\)|\(/g,"");
+  }
+  console.log(strew);
+  
+
+  if(strew.length === 10){
+  return true;
+  }
+  else if(strew.length === 11 && strew[0]==="1"){
+  console.log(strew.length);
+  return true;
+  }
+  else {
+  return false;
+  }
+}
+
+telephoneCheck("555-(555)-5555");

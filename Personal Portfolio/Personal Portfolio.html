@@ -1,0 +1,183 @@
+
+<html>
+    <head>
+        <title>Personal Portfolio</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+#projects{
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 70px;
+  background-color: #F5EFFF;
+}
+
+#social{
+  padding-top: 0;
+  background-color: red;
+  display: block;
+  margin-top: 0;
+  padding-bottom: 70px;
+}
+
+ul > li{
+  font-size: 40px;
+  display: inline;
+  margin: 10px;
+  padding-bottom: 20px;
+}
+
+#navbar{
+  z-index: 2;
+  position: fixed;
+}
+
+nav{
+  background-color: #83C5BE;
+  color: white;
+  width: 100%;
+  
+  display: flex;
+  justify-content: flex-end; 
+  padding: 20px;
+  z-index: 1;
+  
+  
+}
+
+nav a{
+  margin-left: 20px;
+  color: #2E4057;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-tile{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Lato',sans-serif;
+  margin: 0;
+}
+
+header{
+  
+  background-image: url("https://unsplash.com/photos/XEB8y0nRRP4/download?force=true");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  flex-direction: column; 
+  position: relative;
+}
+
+section{
+  text-align: center;
+}
+
+#welcome-section{
+ height: 80vh;
+  z-index: 4;
+  display: block;
+}
+
+ header::after {
+   content: '';
+   background-color: black;
+   position: absolute;
+   top:0; 
+   left:0;
+   bottom: 0;
+   right: 0;
+   opacity: 0.6;
+   
+}
+
+header *{
+  position: relative;
+  z-index: 1;
+  /*margin: auto;*/
+}
+
+header h1{
+  font-size: 50px;
+  
+}
+
+header h2{
+  font-size: 20px;
+  
+}
+
+footer{
+  background-color: #CFD186;
+  color: black;
+  padding: 12px;
+  text-align: center;
+}
+
+footer .fa-heart{
+  color: red;
+}
+
+@media(min-width: 400px){
+  #navbar{
+    postion: relative;
+  }
+}
+        </style>
+    </head>
+    <body>
+<nav id="navbar">
+    <a href="#about">About </a>
+    <a href="#projects">Projects</a>
+    <a href="#social">Social</a>
+  </nav>
+  <welcome id="welcome-section">
+  <header id="about">
+  <h1>Hello! It's Alim🐱‍🏍</h1>
+    <h2>Let me show you the cool websites I made. 😃✔</h2>
+  </header>
+</welcome>
+ 
+  
+  <section id="projects">
+    <h1 style="background-color: yellow; font-size: 25px; text-align:center; margin-top: 0; padding: 20px;">Projects</h1>
+    <br><br>
+    <a href="https://codepen.io/alimalim77/pen/RwgdjjO" target="_blank" class="project-tile"><img src="https://cdn2.iconfinder.com/data/icons/strongicon-vol-22/24/filetype-24-1024.png" alt="No image" height=60px width=60px ><br>Technical Documentation Page</a>
+    <br>
+    <a href="https://codepen.io/alimalim77/pen/jOweGoa" target="_blank" class="project-tile"><img src="https://cdn2.iconfinder.com/data/icons/strongicon-vol-22/24/tool-30-1024.png" alt="No image" height=60px width=60px ><br>Clubs Home Page</a>
+  </section>
+
+  <section id="social">
+    <h2 style="margin-top: 0; background-color: green; padding : 20px;">Social Networking Links</h2>
+    <br>
+    <p style="font-family: sans-serif;">Find me on these platforms</p><br>
+    <ul style="list-style-type: none;">
+      <li ><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      <li ><a href="https://www.instagram.com/alymxd/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/mohammad-alim-90a91835/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      <li><a id="profile-link" href="https://github.com/alimalim77" target="_blank"><i class="fab fa-github"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+    </ul>
+    <div id="googleMap" style="width:100%;height:400px;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.7839956471666!2d80.43400101408513!3d26.365847589766823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c42168d83c455%3A0x464480de38dc4686!2sAllenhouse%20Institute%20of%20Technology%20%7C%20Engineering%20College%20in%20Kanpur%20%7C%20Best%20Engineering%20College%20in%20Kanpur%20%7C%20Top%20Engineering%20College%20in%20Kanpur!5e0!3m2!1sen!2sin!4v1634029509108!5m2!1sen!2sin" width="600" height="450" style="border:0; " allowfullscreen="" loading="lazy"></iframe>
+ </div>
+  </section>     
+      <br><br>
+
+    
+  
+  <footer>Made with <i class="fas fa-heart"></i> By Alim</footer>
+  </body>
+ </html>

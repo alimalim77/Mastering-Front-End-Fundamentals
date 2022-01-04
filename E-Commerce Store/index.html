@@ -1,0 +1,116 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SwipeKart</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/body.css'>
+    <script src='js/main.js'></script> 
+</head>
+<body>
+
+    <div id='heading'>
+    <p style="text-align: center; background-color: #05668D; padding: 50px 0px 50px 0px; color: yellow;">
+         SwipeKart <img src="https://cdn.pixabay.com/photo/2016/11/07/13/04/yoga-1805784_1280.png" height='40px'>  </p>
+    </div>
+  <div id ="first">
+    <a href="#second" style="text-decoration: none;">
+        <span class="nav" >About &nbsp &nbsp</span></a>
+    <a href="#third" style="text-decoration: none;">
+      <span class="nav">Info &nbsp &nbsp</span></a>
+    <a href="#fourth" style="text-decoration: none;"><span class="nav">More &nbsp &nbsp</span></a>
+  </div>
+
+  <div id='second'> <p class="secondliner" >Best Deals in Town<br>Hurry Up
+  </p>
+  <input type="submit" name="Click Here" value="Check Deals" id="button">
+  <p class="secondliner" style=" margin-top: -10px;">Hurry Up</p>
+
+  </div>
+
+
+  <div id='third'> 
+  <div>
+    <p id = "paraheading" style="margin-top: 30px;">Shopping Items</p>
+    <figure>
+    <img src="https://cdn.pixabay.com/photo/2016/12/10/16/57/shoes-1897708_1280.jpg" id="shoes" class="floaters" height= 200px>
+      <figcaption>Shoe Rs. 1000/-</figcaption>
+    </figure>
+    <a href="#" class="myButton">Buy Now</a>
+    
+    <figure>
+    <img src="https://cdn.pixabay.com/photo/2017/01/13/04/56/blank-1976334_1280.png" id="shirt" class="floaters"  height= 100px width= 200px>
+      <figcaption> Shirt Rs. 500 /-</figcaption>
+    </figure>
+    <a href="#" class="myButton">Buy Now</a>
+    
+    <figure>
+    <img src="https://cdn.pixabay.com/photo/2020/06/04/06/22/mockup-5257435_1280.jpg" id="shirt" class="floaters"  height= 300px width= 400px>
+      <figcaption> Combo: Rs. 500/-</figcaption>
+    </figure>
+    <a href="#" class="myButton">Buy Now</a>
+    
+    <figure>
+    <img src="https://cdn.pixabay.com/photo/2014/06/13/01/17/wallet-367975_1280.jpg" id="shoes" class="floaters" height= 200px>
+      <figcaption>Wallet Rs. 500/-</figcaption>
+    </figure>
+    <a href="#" class="myButton">Buy Now</a>    
+    
+    <br><br>
+    
+    </div>
+</div>
+
+
+</div>
+  <div id='fourth'> 
+    <div id="man" style="text-align: center; height: 500px;">
+  <h1 id="paraheading"> Support Service </h1><br><br>
+  <p id="description">Feel free to share in case you have a problem by filling out this form. 
+      <br> Our team will reach out to you within 6 hours of your request</p> 
+  
+  <form id="survey-form" name="form" method="post" onsubmit="return validateform()"> 
+    <label for="name" id="name-label">Name:<br></label>
+      <input type="text" class="placebo" name="name" placeholder="Enter your name" required> 
+    <br><br>
+    <label for="email" id="email-label">E-Mail:<br></label>
+    <input type="email" class="placebo"  name="email" placeholder="email" required> 
+    <br><br>
+  
+    <div class="radio">
+    <p> Do you reside in India?</p>
+     <label>
+        <input name="radio" class="placebo"  value="yes" type="radio"/> 
+       Yes
+      </label>
+      <label>
+        <input name="radio" class="placebo"   value="No" type="radio"/>
+        No</label>
+    </div>
+  
+    
+    
+    <p>Any suggestions</p>
+    <textarea name="suggestion" placeholder="Any suggestions" class="placebo" ></textarea>
+    <br>
+    <button type="submit" style=" box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color: yellow;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:green;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;" class="placebo" >
+        Submit
+     </button>
+  </form>
+  
+   </div>
+</div>
+</body>
+</html>

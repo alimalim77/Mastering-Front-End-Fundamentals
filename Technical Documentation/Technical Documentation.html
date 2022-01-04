@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main-doc{
+ background-color: #FCF300;
+  color:  black;
+  font-family: 'Helvetica Neue', sans-serif; font-size: 27px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center;
+  padding: 20px 20px 20px 20px;
+  margin: 60px 5px 10px 5px;
+}
+li{
+  display: inline;
+}
+a{
+  display: inline;
+  text-decoration: none;
+  color: balck;
+}
+
+.header{
+  margin-top: 10px;
+  font-size: 40px;
+  font-family: calibri;
+  color: blue;
+  text-align: center;
+}
+
+.code{
+  background-color: white;
+  color: green;
+  display: inline;
+  margin-right: 1000px;
+  z-index: 3;
+}
+
+#javascript > code {
+  margin-right: 950px;  
+}
+
+br {
+  content: "";
+  margin: 2em;
+  display: block;
+  font-size: 14%;
+}
+
+#navbar{
+  position: float;
+  display: inline;
+  background-color: black;
+  margin: -80px 0px 0px -33px;
+}
+
+#navbar > ul{
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+#navbar {
+  display: inline;
+}
+
+.nav-link{
+      display: inline-block;
+      padding: 8px 20px;
+      margin: 0px 3px 6px;
+      text-align: center;
+      border: 2px solid rgb(255, 255, 255);
+      text-decoration: none;
+      color: black;
+       background-color:  #D66853;
+}
+.main-section > ul {
+  display: inline;
+  color: red;
+  margin-right: 900px;
+}
+
+@media(max-width: 400px){
+  #navbar{
+    position: relative;
+  }
+}
+
+#python{
+  background-color: #A2D6F9;
+}
+
+#javascript{
+  background-color: #A2D6F9;
+}
+    </style>
+</head>
+<body>
+    <main id="main-doc">
+        <nav id="navbar">
+          <header style="text-align: center; font-size: 40px; color: black">
+          Top Programming Languages  
+          </header>   
+          <hr>
+         <ul >
+           <li><a class="nav-link" href="#cpp">CPP</a></li>
+         
+           <li><a class="nav-link" href="#python">Python</a></li>
+     
+           <li><a class="nav-link" href="#swift">Swift</a></li>
+        
+           <li><a class="nav-link" href="#javascript">Javascript</a></li>
+        
+           <li><a class="nav-link" href="#go">Go</a></li>
+        </nav>
+       
+       
+       
+       
+       <br><br>
+       <section class="main-section" id="cpp">
+        <header class="header">
+        CPP  
+        </header>
+         <p> CPP is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or "C with Classes".</p>
+         <p>  The language has expanded significantly over time, and modern C++ now has object-oriented, generic, and functional features in addition to facilities for low-level memory manipulation.</p><br>
+         
+         <code class="code">
+         #include 
+         <br>
+         int main()<br>
+         {<br>
+          std::cout << "Hello, world!";<br>
+         return 0;<br>
+         }<br>
+         </code>
+         
+         <p>Six advantages of CPP are: </p>
+            <ul>
+                 <li>
+                   Mid-level programming language
+                 </li>
+                 
+                 <li>
+                   Multi-paradigm programming language
+                 </li>
+                 <li>
+                  Object Oriented 
+                 </li>
+                 <li>
+                   Standard Library
+                 </li>
+               </ul>
+       </section>
+       <hr>
+       <br>
+       
+       <section class="main-section" id="python">
+       <header class="header">
+       Python
+       </header>
+         <p> Python is an interpreted high-level general-purpose programming language.</p>
+         <p> Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.</p>
+         
+          <code class="code">
+           print("Hello World");
+         </code>
+       <p>Six advantages of Python are: </p>
+            <ul>
+              <li>
+              Easy to Read, Learn and Write
+              </li>
+              <li>
+               Dynamically Typed    
+              </li>
+              <li>
+               Free and Open-Source    
+              </li>
+              <li>
+               Portability    
+              </li>
+            </ul>
+       </section>
+       <hr>
+       <br>
+       
+       <section class="main-section" id="swift">
+         <header class="header">
+           Swift
+         </header>
+         <p> Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc.</p>
+         <p> and the open-source community. First released in 2014, Swift was developed as a replacement for Apple's earlier programming language Objective-C, as Objective-C had been largely unchanged since the early 1980s and lacked modern language features.</p>
+         
+         <code class="code">
+         println("Hello, world!")  
+         </code>
+         
+        <p>Six advantages of Swift are: </p>
+            <ul>
+                 <li>
+              Interoperable with Objective-C
+                 </li>
+                 <li>
+                   Low maintenance
+                 </li>
+                 <li>
+                   Better user experience
+                 </li>
+                 <li>
+                Effective memory management
+                 </li>
+               </ul> 
+       </section>
+       <hr>
+       <br>
+       <section class="main-section" id="javascript">
+         <header class="header">
+         Javascript
+         </header>
+         <p> It was invented in 1995</p>
+         <p> Javascript must not be confused with java which is used for software development while Javascript is used to make the website more responsive and user friendly.</p>
+         
+       <code class="code">
+          document.write('Hello, world!'); 
+       </code>
+         
+         <p>Six advantages of Javascript are: </p>
+            <ul>
+                 <li>
+                   Speed
+                 </li>
+                 <li>
+                   Simplicity
+                 </li>
+                 <li>Gives the ability to create rich interfaces
+                 </li>
+                 <li>
+                    Less server interaction
+                 </li>
+               </ul>
+       </section>
+       <hr>
+       <br>
+       
+       <section class="main-section" id="go">
+         <header class="header">
+          Go
+         </header>
+         <p>Go is a statically typed, compiled programming language designed at Google[11] by Robert Griesemer, Rob Pike, and Ken Thompson.</p>
+        <p> Go is syntactically similar to C, but with memory safety, garbage collection, structural typing,[6] and CSP-style concurrency.[13] The language is often referred to as Golang because of its domain name, golang.org, but the proper name is Go</p>
+         
+          <code class="code">
+           func main() { 
+               fmt.Println("hello world")
+           }
+         </code>
+         
+         <p>Six advantages of GoLang are: </p>
+            <ul>
+                 <li>
+                   Well-Scaled
+                 </li>
+                 <li>
+                   Well-Scaled
+                 </li>
+                 <li>
+                   Comprehensive Programming Tools
+                 </li>
+                 <li>
+                   Growing Pool Of Talent
+                 </li>
+               </ul> 
+       </section>
+       
+     </main>
+</body>
+</html>

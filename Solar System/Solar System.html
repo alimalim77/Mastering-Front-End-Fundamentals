@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-assets>
+      <audio id="sound" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+
+      <img src="sun.jpg"
+      id="sun">
+      <img src="mercury.jpg"
+      id="mercury">
+      <img src="venus.jpg"
+      id="venus">
+      <img src="earth.jpg"
+      id="earth">
+      <img src="mars.jpg"
+      id="mars">
+      <img src="jupiter.jpg"
+      id="jupiter">
+      <img src="uranus.jpg"
+      id="uranus">
+      <img src="neptune.jpg"
+      id="neptune">
+      <img id="sky" src="space.jpg">
+    </a-assets>
+    <a-scene background="color: blue">
+      <a-sky src="#sky">
+        
+      </a-sky>
+
+      <a-sound
+      src="#sound"
+      autoplay="true"
+      loop="true"
+      position="2 0 -10">
+      </a-sound>
+      
+      <a-sphere
+      src="#sun"
+      position="-10 6 -9"
+      radius="9"
+      ></a-sphere>
+
+      <a-text
+      value="Mercury"
+      color="#FFFFFF"
+      position="1.5 1.8 -10"
+      scale="1.5 1.5 1.5"></a-text>
+      <a-sphere
+      src="#mercury"
+      position="2 0 -10"
+      radius="1"
+      ></a-sphere>
+      
+      <a-text
+      value="Venus"
+      color="#FFFFFF"
+      position="4.5 1.8 -10"
+      scale="1.5 1.5 1.5"></a-text>
+      <a-sphere
+      src="#venus"
+      position="5 0 -9"
+      radius="0.8"
+      ></a-sphere>
+
+
+      <a-text
+      value="Earth"
+      color="#FFFFFF"
+      position="7.5 1.8 -10"
+      scale="1.5 1.5 1.5"></a-text>
+      <a-sphere
+      src="#earth"
+      position="8 0 -9"
+      radius="0.8"
+      ></a-sphere>
+
+      <a-text
+      value="Mars"
+      color="#FFFFFF"
+      position="10.5 1.8 -10"
+      scale="1.5 1.5 1.5"></a-text>
+      <a-sphere
+      src="#mars"
+      position="11 0 -9"
+      radius="0.9"
+      ></a-sphere>
+
+      <a-text
+      value="Jupiter"
+      color="#FFFFFF"
+      position="14.5 2.8 -10"
+      scale="1.5 1.5 1.5"></a-text>
+      <a-sphere
+      src="#jupiter"
+      position="15 0 -9"
+      radius="2.0"
+      ></a-sphere>
+
+
+      <a-light
+      color="yellow"
+      intensity="1"
+      position="25 30 -20">
+      </a-light>
+
+      <a-text
+      value="Neptune"
+      color="#FFFFFF"
+      position="26.5 1.8 -10"
+      scale="1.5 1.5 1.5"></a-text>
+      <a-sphere 
+        color="skyblue"
+        position="27 0 -10" 
+        radius="0.6"></a-sphere>
+
+        <a-text
+      value="Saturn"
+      color="#FFFFFF"
+      position="19.5 1.8 -10"
+      scale="1.5 1.5 1.5"></a-text>
+        <a-entity id="saturn-container" position="20 0 -10">
+        <a-sphere position="0 0 0 " radius=".8" color="#F8EC99" id="saturn"></a-sphere>
+        <a-torus id="saturn-ring-1" color="#57524A" segments-tubular="50" radius="3.2" radius-tubular="0.1" rotation="90 0 0" scale=".44 .44 0.04"></a-torus>
+        <a-torus id="saturn-ring-2" color="#A29A87" segments-tubular="50" radius="2.4" radius-tubular="0.2" rotation="90 0 0" scale=".44 .44 0.04"></a-torus>
+      </a-entity>
+      <a-text
+      value="Uranus"
+      color="#FFFFFF"
+      position="23.5 1.8 -10"
+      scale="1.5 1.5 1.5"></a-text>
+      <a-entity id="uranus-container" position="24 0 -10">
+        <a-sphere id="#uranus" radius=".75" src="#uranus"></a-sphere>
+        <a-torus id="uranus-ring" color="#FFFFFF" segments-tubular="50" radius="1.5" radius-tubular="0.01" rotation="-10 90 0" scale=".75 .75 0.075"></a-torus>
+      </a-entity>
+        
+      
+    </a-scene>
+  </body>
+</html>

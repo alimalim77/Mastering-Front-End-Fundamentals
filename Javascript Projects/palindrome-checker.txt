@@ -1,0 +1,25 @@
+function palindrome(str) {
+  let str1 = "";
+  let str2 = "";
+  let newer='';
+  let old='';
+
+  let redefStr = str.replace(/[`~ !@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '');
+  redefStr = redefStr.toLowerCase().split("");
+  str1 = redefStr.toString();
+  console.log(str1); 
+  
+  for(let i=0; i< redefStr.length; i++){
+  newer = newer.concat(redefStr[i]);
+  }
+  
+  
+  for(let i=redefStr.length-1; i>=0; i--){
+  old = old.concat(redefStr[i]);
+  }
+  
+  
+  return old === newer;
+}
+palindrome("race car");
+

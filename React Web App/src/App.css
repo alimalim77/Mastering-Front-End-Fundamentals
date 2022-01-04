@@ -1,0 +1,117 @@
+body{
+  background-image: url('https://cdn.pixabay.com/photo/2014/04/05/11/39/rain-316580_1280.jpg');
+  background-repeat:repeat;
+}
+
+button{
+  width: 100px;
+  height: 86px;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-family: 'Bebas Neue', cursive;
+  border-radius: 20%;
+  background-color: red;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 35px;
+  box-shadow: 6px 0px 0px #23B5D3;
+  outline: transparent;
+ 
+}
+button:hover{
+  transition: 200ms;
+ scale:1.03;
+ background-color: rgb(59, 143, 211);
+}
+
+.headername{
+  height: 100%;
+  width: 90%;
+  color: black;
+  margin-top: -10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  font-style: italic;
+  text-align:center;
+  text-shadow: 2px 3px yellowgreen ;
+}
+
+.buttonclass{
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: end;
+  
+}
+.navbar{
+  height: 35px;
+  padding: 20px 50px 0px 30px ;
+}
+
+.box{
+  background-color: #23B5D3;
+}
+
+.userbox{
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.person{
+  border-radius: 50%;
+}
+
+
+.column3{
+  float: left !important;
+  width: 33% !important;
+}
+h2{
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+
+.profile {
+  border: 2px solid rgb(255, 166, 255);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  max-width: 200px;
+  margin-top: 10px; 
+  margin-left: 5px;
+  text-align: center;
+  font-family: arial;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: greenyellow;
+  opacity: 1;
+}
+
+.profile:hover{
+  transition:400ms;
+  border-color: #0088EA;
+  box-shadow: 0 0 10px #0285E2;
+  -moz-box-shadow: 0 0 10px #0285E2;
+  -webkit-box-shadow: 0 0 10px #0285E2;
+  transform: translateY(-3px);
+  opacity: 0.8;
+}
+
+.mail {
+  color: rgb(59, 52, 52);
+  font-size: 20px;
+  font-weight: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+.name{
+  font-size:25px;
+  font-weight: bold;
+  color: darkred;
+}
+.load{
+  margin-left: 420px;
+  margin-top: 100px;
+  color: aquamarine;
+}
