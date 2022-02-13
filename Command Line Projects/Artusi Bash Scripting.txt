@@ -1,0 +1,95 @@
+$ pwd
+/home/ccuser/workspace/artusi
+$ ls -a
+.  ..  drawing  painting  sculpting
+$ cat ..
+cat: ..: Is a directory
+$ cd .
+$ pwd
+/home/ccuser/workspace/artusi
+$ cd ./
+$ pwd
+/home/ccuser/workspace/artusi
+$ ls -l
+total 0
+drwxr-xr-x 4 ccuser ccuser 37 Mar  5  2016 drawing
+drwxr-xr-x 4 ccuser ccuser 34 Mar  5  2016 painting
+drwxr-xr-x 3 ccuser ccuser 18 Mar  5  2016 sculpting
+$ ls -alt
+total 0
+drwxr-xr-x 5 ccuser ccuser 54 Feb 13 10:50 .
+drwxrwxr-x 1 ccuser ccuser 20 Feb 13 10:50 ..
+drwxr-xr-x 4 ccuser ccuser 37 Mar  5  2016 drawing
+drwxr-xr-x 4 ccuser ccuser 34 Mar  5  2016 painting
+drwxr-xr-x 3 ccuser ccuser 18 Mar  5  2016 sculpting
+$ ls
+drawing  painting  sculpting
+$ cd drawing/pencils
+$ ls -a
+.  ..  color.txt  graphite.txt
+$ cp color.txt graphite.txt
+$ cd ../charcoal
+$ cp compressed.txt vine.txt
+$ cp vine.txt /../pencils/color.txt
+cp: cannot create regular file '/../pencils/color.txt': No such file or directory
+$ cp vine.txt ../pencils/color.txt
+$ cd ../...painting
+bash: cd: ../...painting: No such file or directory
+$ cd ../../painting
+$ pwd
+/home/ccuser/workspace/artusi/painting
+$ ls -alt
+total 0
+drwxr-xr-x 2 ccuser ccuser 69 Feb 13 10:50 brushes
+drwxr-xr-x 5 ccuser ccuser 54 Feb 13 10:50 ..
+drwxr-xr-x 4 ccuser ccuser 34 Mar  5  2016 .
+drwxr-xr-x 4 ccuser ccuser 40 Mar  5  2016 paint
+$ ls
+brushes  paint
+$ cd brushes
+$ ls -alt
+total 16
+drwxr-xr-x 2 ccuser ccuser  69 Feb 13 10:50 .
+-rw-r--r-- 1 ccuser ccuser  59 Feb 13 10:50 fan.txt
+-rw-r--r-- 1 ccuser ccuser 133 Feb 13 10:50 flat.txt
+-rw-r--r-- 1 ccuser ccuser 199 Feb 13 10:50 mop.txt
+-rw-r--r-- 1 ccuser ccuser  75 Feb 13 10:50 round.txt
+drwxr-xr-x 4 ccuser ccuser  34 Mar  5  2016 ..
+$ pwd
+/home/ccuser/workspace/artusi/painting/brushes
+$ cp f* ../paint/
+$ ls ../paint
+acryllic  fan.txt  flat.txt  watercolor
+$ cd ../../sculpting
+$ ls -alt
+total 0
+drwxr-xr-x 5 ccuser ccuser 54 Feb 13 10:50 ..
+drwxr-xr-x 3 ccuser ccuser 18 Mar  5  2016 .
+drwxr-xr-x 5 ccuser ccuser 49 Mar  5  2016 clay
+$ ls
+clay
+$  cd clay/polymer
+$ ls
+airdry.txt
+$ mv airdry.txt ../ceramic
+$ ls
+$ cd ../
+$ ls
+ceramic dough  polymer
+$ ls
+ceramic dough  polymer
+$ ls
+ceramic dough  polymer
+$ cd ceramic
+$ ls -a
+.  ..  airdry.txt earthenware.txt  stoneware.txt
+$ rm earthenware.txt
+$ cd ../
+$ pwd
+/home/ccuser/workspace/artusi/sculpting/clay
+$ ls
+ceramic  dough  polymer
+$ rm -r dough
+$ cd ../../
+$ pwd
+/home/ccuser/workspace/artusi
